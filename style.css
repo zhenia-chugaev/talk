@@ -1,0 +1,34 @@
+@import url('src/header.css');
+@import url('src/main.css');
+@import url('src/footer.css');
+
+@font-face {
+  src: url('fonts/Larsseit.woff') format('woff');
+  font-family: 'Larsseit';
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('fonts/Larsseit-Medium.woff') format('woff');
+  font-family: 'Larsseit';
+  font-weight: 500;
+}
+
+@font-face {
+  src: url('fonts/Larsseit-Bold.woff') format('woff');
+  font-family: 'Larsseit';
+  font-weight: 700;
+}
+
+:root {
+  --main-blue: #22356f;
+  --text-white: #fff;
+  --aqua: #62D0Df;
+  --background-blue: #0052c1;
+}
+/* Какие ещё свойства кладут в переменные? */
+
+html, body {
+  font-size: 24px;
+  font-family: 'Larsseit', sans-serif;
+}
