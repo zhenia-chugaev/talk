@@ -1,6 +1,6 @@
 .header {
   background-image: url('../assets/header-background.png');
-  background-size: 77.5% 100%;
+  background-size: 80% 100%;
   background-repeat: no-repeat;
 }
 
@@ -10,6 +10,7 @@
   margin: 0 auto;
   padding-top: 27px;
   text-align: center;
+  z-index: 2;
 }
 
 .brandname {
@@ -26,7 +27,7 @@
   bottom: 0;
 }
 
-.header__menu {
+.menu {
   display: inline-block;
 }
 
