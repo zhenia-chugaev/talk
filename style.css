@@ -29,6 +29,7 @@
 /* Какие ещё свойства кладут в переменные? */
 
 html, body {
+  color: var(--main-blue);
   font-size: 24px;
   font-family: 'Larsseit', sans-serif;
 }
