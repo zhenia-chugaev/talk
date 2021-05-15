@@ -1,4 +1,4 @@
-.main__pic {
+.contents__pic {
   position: absolute;
   top: 0;
   right: 0;
@@ -6,7 +6,7 @@
   z-index: 1;
 }
 
-/* Home - Первая секция */
+/* Раздел 'Home' - Первая секция */
 
 .home-header {
   background-image: url('../assets/header-background.png');
@@ -79,7 +79,7 @@
 
 .link_positioned {
   position: relative;
-  left: 189px;
+  left: 188px;
 }
 
 .link_positioned:hover {
@@ -88,31 +88,59 @@
 
 .link_autohovered {
   position: relative;
-  right: 189px;
+  right: 188px;
   color: #fff;
   font-weight: 500;
   background-color: #fab63e;
 }
 
-/* Home - Вторая секция */
+/* Раздел 'Home' - Вторая секция */
 
 .home-content {
   box-sizing: border-box;
-  width: 100%;
-  height: 604px;
   padding: 7.5% 0 5% 12.5%;
   color: var(--text-white);
   background: var(--aqua) url('../assets/home-content.jpg') no-repeat right center;
+  background-size: contain;
 }
 
 .home-content__text {
   width: 555px;
   margin-top: 75px;
   font-size: 20px;
-  line-height: 1.75;
+  line-height: 1.5rem;
 }
 
 .home-content__text-sentence {
   font-size: 24px;
   font-weight: bold;
+}
+
+/* Раздел 'About' */
+
+.about {
+  padding-top: 7.5%;
+  padding-left: 105px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.about__title {
+  display: inline-block;
+  margin-right: 225px;
+  vertical-align: top;
+}
+
+.about__text {
+  display: inline-block;
+  width: 592px;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.005em;
 }
