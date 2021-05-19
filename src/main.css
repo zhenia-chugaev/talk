@@ -1,3 +1,5 @@
+@import url('animations.css');
+
 .contents__pic {
   position: absolute;
   top: 0;
@@ -119,8 +121,7 @@
 /* Раздел 'About' */
 
 .about {
-  padding-top: 7.5%;
-  padding-left: 105px;
+  padding: 10% 105px 4%;
 }
 
 .title {
@@ -132,7 +133,9 @@
 
 .about__title {
   display: inline-block;
+  margin-top: 0;
   margin-right: 225px;
+  padding-top: 15px;
   vertical-align: top;
 }
 
@@ -140,7 +143,236 @@
   display: inline-block;
   width: 592px;
   margin: 0;
+  padding-top: 5px;
   font-weight: 500;
   line-height: 1.4;
   letter-spacing: 0.005em;
 }
+
+/* Раздел 'Services' - Первая и вторая секции */
+
+.services__title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-top: 15px;
+  color: var(--half-blue);
+  text-align: center;
+}
+
+.services__list {
+  margin-bottom: 5rem;
+}
+
+.list {
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+
+.list__category {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.list__category_size_s {
+  width: 25%;
+  height: 24.5vw;
+}
+
+.list__category_size_m {
+  width: 33.3%;
+  height: 32.7vw;
+}
+
+.list__category_size_m:nth-child(3n+2) {
+  width: 33.4%;
+}
+
+.list__category-link {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0 14.5%;
+  text-decoration: none;
+}
+
+.list__category-hover-area {
+  display: block;
+  box-sizing: border-box;
+  height: 50%;
+  padding-top: 20%;
+}
+
+.list__category-animation {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+}
+
+.list__category-hover-area:hover .list__category-animation {
+  animation: spreading-border 0.6s;
+}
+
+.list__category-name {
+  display: block;
+  padding-top: 9%;
+  color: var(--text-white);
+  font-size: 32px;
+  font-weight: 500;
+  border-top: 1px solid #fff;
+}
+
+.list__category-name_border_transparent {
+  border-top: transparent;
+}
+
+.list__category-text {
+  display: inline-block;
+  width: 85%;
+  margin-left: 4%;
+  vertical-align: text-top;
+}
+
+.list__category-name::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #e9b730;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.services__list .list__category-name::before {
+  width: 9px;
+  height: 9px;
+  vertical-align: super;
+}
+
+/* Модификаторы */
+.list__category_bg_pink {
+  background-color: #ffe2de;
+}
+
+.list__category_bg_green {
+  background-color: #c4e769;
+}
+
+.list__category_bg_aqua {
+  background-color: var(--aqua);
+}
+
+.list__category_bg_blue {
+  background-color: var(--bg-blue);
+}
+
+.list__category_bg_main-blue {
+  background-color: var(--main-blue);
+}
+
+.list__category_bg_gray {
+  background-color: #dee1ff;
+}
+
+.list__category_bg_violet {
+  background-color: #8f00ff;
+}
+
+/* Общее правило для анимации блоков */
+li[class*="bgr"]:hover {
+  animation: increasing-background 2s;
+  background-size: 110%;
+}
+
+/* Блок 'Physical Health' */
+.list__category_bgr_physical-health:hover {
+  background: url('../assets/bgr-physical-health.jpg') center center;
+}
+
+/* Блок 'Mental Health' */
+.list__category_bgr_mental-health:hover {
+  background: url('../assets/bgr-mental-health.jpg') center center;
+}
+
+/* Блок 'Nutrition' */
+.list__category_bg_nutrition:hover {
+  background: url('../assets/bgr-nutrition.jpg') center center;
+}
+
+.list__category-rotation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.list__category_bg_nutrition:hover .list__category-rotation {
+  background: url('../assets/bgr-nutrition.jpg') center center;
+  animation: rotating-background 2s;
+  background-size: 108%;
+}
+
+/* Блок 'Gymnastics' */
+.list__category_bgr_gym:hover {
+  background: url('../assets/bgr-gym.jpg') center center;
+}
+
+/* Блок 'Crossfit' */
+.list__category_bgr_crossfit:hover {
+  background: url('../assets/bgr-crossfit.jpg') center center;
+}
+
+/* Блок 'Aerobics' */
+.list__category_bgr_aerobics:hover {
+  background: url('../assets/bgr-aerobics.jpg') center center;
+}
+
+
+/* Раздел 'Services' - Третья секция */
+
+.services__definitions {
+  margin-top: 1rem;
+  margin-bottom: 40px;
+}
+
+.definitions {
+  font-size: 0;
+}
+
+.definitions__block {
+  display: inline-block;
+  width: 33.3%;
+  height: 240px;
+  vertical-align: middle;
+}
+
+.definitions__block:nth-child(3n+2) {
+  width: 33.4%;
+}
+
+.definitions__inner {
+  padding: 11.5% 16% 7.7% 22%;
+}
+
+.definitions__heading {
+  margin: 0;
+  margin-bottom: 1em;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.definitions__text {
+  margin: 0;
+  color: var(--half-blue);
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: -0.03em;
+}
+
+/* Раздел 'Blog' */
