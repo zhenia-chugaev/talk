@@ -22,9 +22,10 @@
 
 :root {
   --main-blue: #22356f;
+  --half-blue: rgba(34, 53, 111, .5);
   --text-white: #fff;
   --aqua: #62D0Df;
-  --background-blue: #0052c1;
+  --bg-blue: #0052c1;
 }
 /* Какие ещё свойства кладут в переменные? */
 

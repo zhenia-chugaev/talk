@@ -8,14 +8,14 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body translate="no">
+<body>
   <header class="header">
      <div class="header__container">
       <p class="header__brandname brandname">Thrivetalk</p>
       <nav class="header__menu menu">
         <a href="#home" class="menu__link">Home</a>
-        <a href="#" class="menu__link">About</a>
-        <a href="#" class="menu__link">Services</a>
+        <a href="#about" class="menu__link">About</a>
+        <a href="#services" class="menu__link">Services</a>
         <a href="#" class="menu__link">Blog</a>
         <!-- Нужно ли писать класс header__link? -->
       </nav>
@@ -24,6 +24,7 @@
   </header>
   <main class="contents">
     <img class="contents__pic" src="assets/main-pic.png" alt="">
+
     <section class="home">
       <section class="home-header">
         <div class="home-header__container">
@@ -36,6 +37,7 @@
           <a href="#" class="home-header__link link link_autohovered">Who am I</a>
         </div>
       </section>
+
       <section class="home-content">
         <h2 class="home-content__title">Why Thrive?</h2>
         <p class="home-content__text">
@@ -43,11 +45,155 @@
         </p>
       </section>
     </section>
+
     <section class="about">
-      <h2 class="about__title title">About us</h2>
+      <h2 class="about__title title" id="about">About us</h2>
       <p class="about__text">
         We want to help you thrive! Whether you are just looking for someone to talk to, or are struggling with a mental wellness issue we’re here to help.  Our highly talented therapists can help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even just caring for yourself more.
       </p>
+    </section>
+
+    <section class="services">
+      <h2 class="services__title title" id="services">We can help you with</h2>
+      <ul class="services__list list">
+        <li class="list__category list__category_bg_pink list__category_size_s">
+          <a class="list__category-link" href="#">
+            <span class="list__category-hover-area">
+              <span class="list__category-animation"></span>
+              <span class="list__category-name list__category-name_border_transparent">
+                <span class="list__category-text">Weight Lifting</span>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li class="list__category list__category_bg_green list__category_size_s">
+          <a class="list__category-link" href="#">
+            <span class="list__category-hover-area">
+              <span class="list__category-animation"></span>
+              <span class="list__category-name list__category-name_border_transparent">
+                <span class="list__category-text">Running  &amp; Spinning</span>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li class="list__category list__category_bg_aqua list__category_size_s">
+          <a class="list__category-link" href="#">
+            <span class="list__category-hover-area">
+              <span class="list__category-animation"></span>
+              <span class="list__category-name list__category-name_border_transparent">
+                <span class="list__category-text">Pumping Iron</span>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li class="list__category list__category_bg_blue list__category_size_s">
+          <a class="list__category-link" href="#">
+            <span class="list__category-hover-area">
+              <span class="list__category-animation"></span>
+              <span class="list__category-name list__category-name_border_transparent">
+                <span class="list__category-text">Pumping Iron</span>
+              </span>
+            </span>
+          </a>
+        </li> 
+      </ul>
+
+      <ul class="list">
+        <li class="list__category list__category_bg_main-blue list__category_size_m list__category_bgr_physical-health">
+          <a class="list__category-link" href="#">
+            <span class="list__category-hover-area">
+              <span class="list__category-name">
+                <span class="list__category-text">Physical <br>Health</span>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li class="list__category list__category_bg_blue list__category_size_m list__category_bgr_mental-health">
+          <a class="list__category-link" href="#">
+            <span class="list__category-hover-area">
+              <span class="list__category-name">
+                <span class="list__category-text">Mental <br>Health</span>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li class="list__category list__category_bg_green list__category_size_m list__category_bg_nutrition">
+          <span class="list__category-rotation"></span>
+          <a class="list__category-link" href="#">
+            <span class="list__category-hover-area">
+              <span class="list__category-name">
+                <span class="list__category-text">Nutrition</span>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li class="list__category list__category_bg_aqua list__category_size_m list__category_bgr_gym">
+          <a class="list__category-link" href="#">
+            <span class="list__category-hover-area">
+              <span class="list__category-name">
+                <span class="list__category-text">Gymnastics</span>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li class="list__category list__category_bg_gray list__category_size_m list__category_bgr_crossfit">
+          <a class="list__category-link" href="#">
+            <span class="list__category-hover-area">
+              <span class="list__category-name">
+                <span class="list__category-text">Crossfit</span>
+              </span>
+            </span>
+          </a>
+        </li>
+        <li class="list__category list__category_bg_violet list__category_size_m list__category_bgr_aerobics">
+          <a class="list__category-link" href="#">
+            <span class="list__category-hover-area">
+              <span class="list__category-name">
+                <span class="list__category-text">Aerobics</span>
+              </span>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <section class="services__definitions definitions">
+        <div class="definitions__block">
+          <div class="definitions__inner">
+            <h3 class="definitions__heading">Nutritional Plans</h3>
+            <p class="definitions__text">Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.</p>
+          </div>
+        </div>
+        <div class="definitions__block">
+          <div class="definitions__inner">
+            <h3 class="definitions__heading">Weight Loss</h3>
+            <p class="definitions__text">Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.</p>
+          </div>
+        </div>
+        <div class="definitions__block">
+          <div class="definitions__inner">
+            <h3 class="definitions__heading">Mental Peace</h3>
+            <p class="definitions__text">Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.</p>
+          </div>
+        </div>
+        <div class="definitions__block">
+          <div class="definitions__inner">
+            <h3 class="definitions__heading">Home Training</h3>
+            <p class="definitions__text">Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.</p>
+          </div>
+        </div>
+        <div class="definitions__block">
+          <div class="definitions__inner">
+            <h3 class="definitions__heading">Work/Life Balance</h3>
+            <p class="definitions__text">Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.</p>
+          </div>
+        </div>
+        <div class="definitions__block">
+          <div class="definitions__inner">
+            <h3 class="definitions__heading">Cardio</h3>
+            <p class="definitions__text">Nutritional Facts on some shitty things that you don’t care about and even we don’t , I need to replace this copy.</p>
+          </div>
+        </div>
+      </section>
     </section>
   </main>
 </body>

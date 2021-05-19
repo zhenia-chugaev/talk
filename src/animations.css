@@ -1,0 +1,37 @@
+@keyframes spreading-border {
+  0% {
+    width: 0;
+    border-bottom: 1px solid #fff;
+  }
+
+  100% {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+@keyframes increasing-background {
+  0% {
+    background-size: 100%;
+    background-position: center center;
+  }
+
+  100% {
+    background-size: 110%;
+    background-position: center center;
+  }
+}
+
+@keyframes rotating-background {
+  0% {
+    background-size: 100%;
+    background-position: center center;
+    transform: rotate(3deg);
+  }
+
+  100% {
+    background-size: 108%;
+    background-position: center center;
+    transform: rotate(0deg);
+  }
+}
