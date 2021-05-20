@@ -414,11 +414,11 @@ li[class*="bgr"]:hover {
 }
 
 .info__background_bg-image_1 {
-  background: url('../assets/blog-stat.jpg') no-repeat;
+  background: url('../assets/blog-stat.jpg') no-repeat center;
 }
 
 .info__background_bg-image_2 {
-  background: url('../assets/blog-promo.jpg') no-repeat;
+  background: url('../assets/blog-promo.jpg') no-repeat center;
 }
 
 .info__container {
