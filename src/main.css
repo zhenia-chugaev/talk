@@ -57,6 +57,19 @@
   margin-right: 34px;
 }
 
+.home-header__link:first-of-type {
+  position: relative;
+  left: 188px;
+}
+
+.home-header__link:last-of-type {
+  position: relative;
+  right: 188px;
+  color: #fff;
+  font-weight: 500;
+  background-color: #fab63e;
+}
+
 .link:hover {
   color: #f4f9e2;
   font-weight: 500;
@@ -69,6 +82,11 @@
   background-color: transparent;
 }
 
+.link_text_narrowed:hover {
+  letter-spacing: normal;
+  text-align: center;
+}
+
 .link_theme_blue {
   color: var(--aqua);
 }
@@ -76,39 +94,41 @@
 .link_theme_blue:hover {
   color: #fff;
   font-weight: 500;
-  background-color: var(--aqua);
-}
-
-.link_positioned {
-  position: relative;
-  left: 188px;
-}
-
-.link_positioned:hover {
-  letter-spacing: normal;
-}
-
-.link_autohovered {
-  position: relative;
-  right: 188px;
-  color: #fff;
-  font-weight: 500;
-  background-color: #fab63e;
+  background-image: linear-gradient(150deg, var(--aqua), #62d6ef);
 }
 
 /* Раздел 'Home' - Вторая секция */
 
 .home-content {
-  box-sizing: border-box;
-  padding: 7.5% 0 5% 12.5%;
+  height: 600px;
   color: var(--text-white);
-  background: var(--aqua) url('../assets/home-content.jpg') no-repeat right center;
-  background-size: contain;
+  font-size: 0;
+  background-color: var(--aqua);
+}
+
+.home-content__container {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 65%;
+  height: 100%;
+  padding: 7.5% 12.8% 5%;
+  vertical-align: top;
+}
+
+.home-content__background {
+  display: inline-block;
+  width: 35%;
+  height: 100%;
+  background: url('../assets/home-content.jpg') no-repeat;
+  background-size: cover;
+}
+
+.home-content__title {
+  font-size: 36px;
 }
 
 .home-content__text {
-  width: 555px;
-  margin-top: 75px;
+  margin-top: 15%;
   font-size: 20px;
   line-height: 1.5rem;
 }
@@ -125,6 +145,7 @@
 }
 
 .title {
+  padding-top: 15px;
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
@@ -135,7 +156,6 @@
   display: inline-block;
   margin-top: 0;
   margin-right: 225px;
-  padding-top: 15px;
   vertical-align: top;
 }
 
@@ -154,7 +174,6 @@
 .services__title {
   margin-top: 0;
   margin-bottom: 1rem;
-  padding-top: 15px;
   color: var(--half-blue);
   text-align: center;
 }
@@ -290,17 +309,17 @@ li[class*="bgr"]:hover {
 
 /* Блок 'Physical Health' */
 .list__category_bgr_physical-health:hover {
-  background: url('../assets/bgr-physical-health.jpg') center center;
+  background: url('../assets/bgr-physical-health.jpg') center;
 }
 
 /* Блок 'Mental Health' */
 .list__category_bgr_mental-health:hover {
-  background: url('../assets/bgr-mental-health.jpg') center center;
+  background: url('../assets/bgr-mental-health.jpg') center;
 }
 
 /* Блок 'Nutrition' */
 .list__category_bg_nutrition:hover {
-  background: url('../assets/bgr-nutrition.jpg') center center;
+  background: url('../assets/bgr-nutrition.jpg') center;
 }
 
 .list__category-rotation {
@@ -313,24 +332,24 @@ li[class*="bgr"]:hover {
 }
 
 .list__category_bg_nutrition:hover .list__category-rotation {
-  background: url('../assets/bgr-nutrition.jpg') center center;
+  background: url('../assets/bgr-nutrition.jpg') center;
   animation: rotating-background 2s;
   background-size: 108%;
 }
 
 /* Блок 'Gymnastics' */
 .list__category_bgr_gym:hover {
-  background: url('../assets/bgr-gym.jpg') center center;
+  background: url('../assets/bgr-gym.jpg') center;
 }
 
 /* Блок 'Crossfit' */
 .list__category_bgr_crossfit:hover {
-  background: url('../assets/bgr-crossfit.jpg') center center;
+  background: url('../assets/bgr-crossfit.jpg') center;
 }
 
 /* Блок 'Aerobics' */
 .list__category_bgr_aerobics:hover {
-  background: url('../assets/bgr-aerobics.jpg') center center;
+  background: url('../assets/bgr-aerobics.jpg') center;
 }
 
 
@@ -376,3 +395,83 @@ li[class*="bgr"]:hover {
 }
 
 /* Раздел 'Blog' */
+
+.info {
+  height: 800px;
+  font-size: 0;
+}
+
+.info_bg_blue {
+  color: var(--text-white);
+  background-color: var(--main-blue);
+}
+
+.info__background {
+  display: inline-block;
+  width: 33.3%;
+  height: 100%;
+  background-size: cover;
+}
+
+.info__background_bg-image_1 {
+  background: url('../assets/blog-stat.jpg') no-repeat;
+}
+
+.info__background_bg-image_2 {
+  background: url('../assets/blog-promo.jpg') no-repeat;
+}
+
+.info__container {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 66.7%;
+  height: 100%;
+  padding: 6% 0 3%;
+  vertical-align: top;
+}
+
+.info__container_padding_1 {
+  padding-left: 7%;
+}
+
+.info__container_padding_2 {
+  padding-left: 12.5%;
+}
+
+.info__title {
+  margin: 0;
+  font-weight: normal;
+}
+
+.info__text {
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.info__text_block_1 {
+  width: 82%;
+  margin: 25.5% 0 17%;
+  font-weight: bold;
+}
+
+.info__text_block_2 {
+  width: 70%;
+  margin-bottom: 9%;
+  letter-spacing: -0.01em;
+}
+
+.info__text-word {
+  color: var(--aqua);
+}
+
+.info__text-heading {
+  margin: 27% 0 9%;
+  font-weight: 500;
+  font-size: 64px;
+  letter-spacing: -0.01em;
+}
+
+.info__link {
+  text-align: left;
+}
