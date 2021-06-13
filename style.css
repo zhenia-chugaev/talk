@@ -1,36 +1,47 @@
-@import url('src/header.css');
-@import url('src/main.css');
-@import url('src/footer.css');
+@import url("src/header.css");
+@import url("src/main.css");
+@import url("src/footer.css");
 
 @font-face {
-  src: url('fonts/Larsseit.woff') format('woff');
-  font-family: 'Larsseit';
+  src: url("fonts/Larsseit.woff") format("woff");
+  font-family: "Larsseit";
   font-weight: 400;
 }
 
 @font-face {
-  src: url('fonts/Larsseit-Medium.woff') format('woff');
-  font-family: 'Larsseit';
+  src: url("fonts/Larsseit-Medium.woff") format("woff");
+  font-family: "Larsseit";
   font-weight: 500;
 }
 
 @font-face {
-  src: url('fonts/Larsseit-Bold.woff') format('woff');
-  font-family: 'Larsseit';
+  src: url("fonts/Larsseit-Bold.woff") format("woff");
+  font-family: "Larsseit";
   font-weight: 700;
 }
 
 :root {
   --main-blue: #22356f;
-  --half-blue: rgba(34, 53, 111, .5);
+  --half-blue: rgba(34, 53, 111, 0.5);
+  --link-blue: #07f;
   --text-white: #fff;
-  --aqua: #62D0Df;
+  --aqua: #62d0df;
+  --light-aqua: #62d6ef;
   --bg-blue: #0052c1;
+  --bg-pink: #ffe2de;
+  --bg-lime: #c4e769;
+  --bg-dove: #dee1ff;
+  --bg-violet: #8f00ff;
+  --azure: #edfdff;
+  --light-shades: #f4f9e2;
+  --orange: #fab63e;
+  --light-orange: #fbbc3e;
+  --mid-orange: #e9b730;
 }
-/* Какие ещё свойства кладут в переменные? */
 
-html, body {
+html,
+body {
   color: var(--main-blue);
   font-size: 24px;
-  font-family: 'Larsseit', sans-serif;
+  font-family: "Larsseit", sans-serif;
 }

@@ -46,15 +46,16 @@
 }
 
 .footer-content__column-link {
-  color: #07f;
+  color: var(--link-blue);
   text-decoration: none;
 }
 
 .footer-copyright {
-  height: 80px;
+  height: 78px;
+  padding: 1px 0;
   padding-left: 12.5%;
   color: var(--text-white);
-  line-height: 80px;
+  line-height: 78px;
   background-color: var(--aqua);
 }
 
