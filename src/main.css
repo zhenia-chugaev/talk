@@ -1,4 +1,4 @@
-@import url('animations.css');
+@import url("animations.css");
 
 .contents__pic {
   position: absolute;
@@ -8,10 +8,15 @@
   z-index: 1;
 }
 
-/* Раздел 'Home' - Первая секция */
+@media (min-width: 1700px) {
+  .contents__pic {
+    width: 43%;
+  }
+}
 
+/* Раздел 'Home' - Первая секция */
 .home-header {
-  background-image: url('../assets/header-background.png');
+  background-image: url("../assets/header-background.png");
   background-size: 79% 100%;
   background-repeat: no-repeat;
 }
@@ -43,7 +48,7 @@
   display: inline-block;
   width: 150px;
   height: 50px;
-  color: #fab63e;
+  color: var(--orange);
   font-weight: bold;
   font-size: 16px;
   line-height: 50px;
@@ -65,19 +70,19 @@
 .home-header__link:last-of-type {
   position: relative;
   right: 188px;
-  color: #fff;
+  color: var(--text-white);
   font-weight: 500;
-  background-color: #fab63e;
+  background-color: var(--orange);
 }
 
 .link:hover {
-  color: #f4f9e2;
+  color: var(--light-shades);
   font-weight: 500;
-  background-image: linear-gradient(150deg, #fab63e, #fbbc3e);
+  background-image: linear-gradient(150deg, var(--orange), var(--light-orange));
 }
 
 .link:hover + .link:last-of-type {
-  color: #fab63e;
+  color: var(--orange);
   font-weight: bold;
   background-color: transparent;
 }
@@ -92,13 +97,12 @@
 }
 
 .link_theme_blue:hover {
-  color: #fff;
+  color: var(--text-white);
   font-weight: 500;
-  background-image: linear-gradient(150deg, var(--aqua), #62d6ef);
+  background-image: linear-gradient(150deg, var(--aqua), var(--light-aqua));
 }
 
 /* Раздел 'Home' - Вторая секция */
-
 .home-content {
   height: 600px;
   color: var(--text-white);
@@ -119,7 +123,7 @@
   display: inline-block;
   width: 35%;
   height: 100%;
-  background: url('../assets/home-content.jpg') no-repeat;
+  background: url("../assets/home-content.jpg") no-repeat left center;
   background-size: cover;
 }
 
@@ -139,7 +143,6 @@
 }
 
 /* Раздел 'About' */
-
 .about {
   padding: 10% 105px 4%;
 }
@@ -170,7 +173,6 @@
 }
 
 /* Раздел 'Services' - Первая и вторая секции */
-
 .services__title {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -205,7 +207,7 @@
   height: 32.7vw;
 }
 
-.list__category_size_m:nth-child(3n+2) {
+.list__category_size_m:nth-child(3n + 2) {
   width: 33.4%;
 }
 
@@ -229,7 +231,7 @@
   display: block;
   width: 100%;
   margin: 0 auto;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--text-white);
 }
 
 .list__category-hover-area:hover .list__category-animation {
@@ -242,7 +244,7 @@
   color: var(--text-white);
   font-size: 32px;
   font-weight: 500;
-  border-top: 1px solid #fff;
+  border-top: 1px solid var(--text-white);
 }
 
 .list__category-name_border_transparent {
@@ -261,7 +263,7 @@
   display: inline-block;
   width: 12px;
   height: 12px;
-  background-color: #e9b730;
+  background-color: var(--mid-orange);
   border-radius: 50%;
   vertical-align: middle;
 }
@@ -274,11 +276,11 @@
 
 /* Модификаторы */
 .list__category_bg_pink {
-  background-color: #ffe2de;
+  background-color: var(--bg-pink);
 }
 
 .list__category_bg_green {
-  background-color: #c4e769;
+  background-color: var(--bg-lime);
 }
 
 .list__category_bg_aqua {
@@ -294,11 +296,11 @@
 }
 
 .list__category_bg_gray {
-  background-color: #dee1ff;
+  background-color: var(--bg-dove);
 }
 
 .list__category_bg_violet {
-  background-color: #8f00ff;
+  background-color: var(--bg-violet);
 }
 
 /* Общее правило для анимации блоков */
@@ -309,17 +311,18 @@ li[class*="bgr"]:hover {
 
 /* Блок 'Physical Health' */
 .list__category_bgr_physical-health:hover {
-  background: url('../assets/bgr-physical-health.jpg') center;
+  background: url("../assets/bgr-physical-health.jpg") center;
 }
 
 /* Блок 'Mental Health' */
 .list__category_bgr_mental-health:hover {
-  background: url('../assets/bgr-mental-health.jpg') center;
+  background: url("../assets/bgr-mental-health.jpg") center;
 }
 
 /* Блок 'Nutrition' */
 .list__category_bg_nutrition:hover {
-  background: url('../assets/bgr-nutrition.jpg') center;
+  background: url("../assets/bgr-nutrition.jpg") center;
+  background-size: 108%;
 }
 
 .list__category-rotation {
@@ -332,29 +335,27 @@ li[class*="bgr"]:hover {
 }
 
 .list__category_bg_nutrition:hover .list__category-rotation {
-  background: url('../assets/bgr-nutrition.jpg') center;
+  background: url("../assets/bgr-nutrition.jpg") center;
   animation: rotating-background 2s;
   background-size: 108%;
 }
 
 /* Блок 'Gymnastics' */
 .list__category_bgr_gym:hover {
-  background: url('../assets/bgr-gym.jpg') center;
+  background: url("../assets/bgr-gym.jpg") center;
 }
 
 /* Блок 'Crossfit' */
 .list__category_bgr_crossfit:hover {
-  background: url('../assets/bgr-crossfit.jpg') center;
+  background: url("../assets/bgr-crossfit.jpg") center;
 }
 
 /* Блок 'Aerobics' */
 .list__category_bgr_aerobics:hover {
-  background: url('../assets/bgr-aerobics.jpg') center;
+  background: url("../assets/bgr-aerobics.jpg") center;
 }
 
-
 /* Раздел 'Services' - Третья секция */
-
 .services__definitions {
   margin-top: 1rem;
   margin-bottom: 40px;
@@ -371,7 +372,7 @@ li[class*="bgr"]:hover {
   vertical-align: middle;
 }
 
-.definitions__block:nth-child(3n+2) {
+.definitions__block:nth-child(3n + 2) {
   width: 33.4%;
 }
 
@@ -395,7 +396,6 @@ li[class*="bgr"]:hover {
 }
 
 /* Раздел 'Blog' */
-
 .info {
   height: 800px;
   font-size: 0;
@@ -410,15 +410,14 @@ li[class*="bgr"]:hover {
   display: inline-block;
   width: 33.3%;
   height: 100%;
-  background-size: cover;
 }
 
 .info__background_bg-image_1 {
-  background: url('../assets/blog-stat.jpg') no-repeat center;
+  background: url("../assets/blog-stat.jpg") no-repeat center / cover;
 }
 
 .info__background_bg-image_2 {
-  background: url('../assets/blog-promo.jpg') no-repeat center;
+  background: url("../assets/blog-promo.jpg") no-repeat center / cover;
 }
 
 .info__container {
@@ -451,13 +450,13 @@ li[class*="bgr"]:hover {
 
 .info__text_block_1 {
   width: 82%;
-  margin: 25.5% 0 17%;
+  margin: 210px 0 140px;
   font-weight: bold;
 }
 
 .info__text_block_2 {
   width: 70%;
-  margin-bottom: 9%;
+  margin-bottom: 85px;
   letter-spacing: -0.01em;
 }
 
@@ -466,7 +465,7 @@ li[class*="bgr"]:hover {
 }
 
 .info__text-heading {
-  margin: 27% 0 9%;
+  margin: 200px 0 60px;
   font-weight: 500;
   font-size: 64px;
   letter-spacing: -0.01em;
